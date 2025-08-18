@@ -1,0 +1,36 @@
+# Environment variables and sensitive data
+.env
+.env.local
+.env.*.local
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Downloaded content (may contain personal information)
+offline_site/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Chrome driver and browser files
+chromedriver*
+*.crx
