@@ -1,0 +1,127 @@
+@import 'https://etbu.evaluationkit.com/canvas/css';
+
+/*
+** Modified: Sat Aug 24 17:07:22 2019 -0500 sp 04.08.2021
+*/
+
+
+/*
+** Mobile login tweaks
+*/
+.mobileLogin-Header {
+  z-index: 1;
+  background-image: url(https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/355741/login-logo.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% !important;
+  min-height: 156px;
+}
+
+/*
+Hide Mobile Link
+*/
+.forgot-password.flip-to-back{
+display: none;
+}
+
+/*
+** Hide profile avatar change link
+*/
+.profile_pic_link {
+  pointer-events: none !important;
+}
+
+/*
+** Login button fix
+*/
+.Button--login {
+  color: #000 !important;
+  border: 1px solid !important;
+  margin: -40px 0 0 0;
+}
+
+/*
+** Center logo on login dialog
+*/
+.ic-Login-header__logo img {
+  max-width: none !important;
+}
+
+/*
+** Links in login dialog
+*/
+.forgot_password_link{
+  display: none;
+}
+.first_time_link {
+  color: #000 !important;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.email_change{
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.login_info{
+  color: #000;
+  font-size: 14px;
+   width: 100%
+}
+.ic-Login__forgot {
+  margin-top: 20px;
+}
+/*
+.ic-Login__forgot {
+  padding: 0px 0 6px 10px;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+  margin: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+*/
+
+/*
+** Add "@etbu.edu" to login username control.
+** See etbu-custom.js for more info
+*/
+.etbu-control-wrapper {
+  text-align: left !important;
+  border: 1px solid rgb(216, 224, 230);
+  border-radius: 3px;
+  transition: all 0.2s ease-out;
+  box-shadow: none !important;
+}
+.etbu-username {
+  margin: 1px 0 1px 0;
+  border: 0 !important;
+  text-align: left !important;
+  width: 67% !important;
+  display: inline-block !important;
+  outline: none !important;
+}
+.etbu-username:focus {
+  border-color: transparent !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-offset: 0 !important;
+  transition: none !important;
+}
+.etbu-domain {
+  padding: 0 15px 0 0;
+  float: right;
+  color: #000;
+  line-height: 35px;
+}
+.etbu-pseudo-focus {
+  border-color: #081f2c;
+  outline-color: #2d404b;
+  outline-width: 2px;
+  outline-offset: -2px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  transition: border linear 0.2s,box-shadow linear 0.2s;
+}
+
+.lkiI2j09d0k3k div { 
+display: none !important; 
+}

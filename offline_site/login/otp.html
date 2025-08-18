@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081f2c">
+  
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=yes,width=device-width">
+<meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="/web-app-manifest/manifest.json">
+  <meta name="sentry-trace" content="ffc8f953eff341a4833ee176ca5c875a-f19a1a6a44df4da2-0"/>
+  <title>Multi-Factor Authentication</title>
+
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css" media="screen" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/a3616af2e13184abcb9016882cec9424/variables-6ceabaf6137deaa1b310c07895491bdd.css" media="all" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-12f108a01d.css" media="all" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/otp_login-6b942dff5e.css" media="screen" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/new_user_tutorials-6b15f87caf.css" media="screen" />
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" />
+  <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" />
+
+  <link rel="stylesheet" href="https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/1825264/blocking%20wizard.css" media="all" />
+  
+  <script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+    INST = {"environment":"production","logPageViews":true,"editorButtons":[]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/a3616af2e13184abcb9016882cec9424/variables-6ceabaf6137deaa1b310c07895491bdd.json","active_brand_config":{"md5":"a3616af2e13184abcb9016882cec9424","variables":{"ic-brand-primary":"#081f2c","ic-link-color":"#081f2c","ic-brand-button--secondary-bgd":"#ecac00","ic-brand-button--secondary-text":"#081f2c","ic-brand-global-nav-bgd":"#081f2c","ic-brand-global-nav-ic-icon-svg-fill":"#ecac00","ic-brand-global-nav-ic-icon-svg-fill--active":"#ecac00","ic-brand-global-nav-menu-item__text-color":"#ecac00","ic-brand-global-nav-menu-item__text-color--active":"#ecac00","ic-brand-global-nav-avatar-border":"#ecac00","ic-brand-global-nav-menu-item__badge-bgd":"#ecac00","ic-brand-global-nav-menu-item__badge-text":"#ecac00","ic-brand-global-nav-logo-bgd":"#081f2c","ic-brand-header-image":"https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/2191737/03%20ETBU%20logo%20Shield%20Navy.jpg","ic-brand-watermark-opacity":"1","ic-brand-right-sidebar-logo":"https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/2192299/ETBU%20Logo.png","ic-brand-Login-body-bgd-color":"#081f2c","ic-brand-Login-body-bgd-shadow-color":"#081f2c","ic-brand-Login-logo":"https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/2194242/ETBU%20logo%20Primary%20Navy%202.jpg","ic-brand-Login-Content-bgd-color":"#ffffff","ic-brand-Login-Content-label-text-color":"#081f2c","ic-brand-Login-footer-link-color":"#081f2c","ic-brand-Login-footer-link-color-hover":"#081f2c","ic-brand-Login-instructure-logo":"#081f2c"},"share":false,"name":null,"created_at":"2025-07-15T13:09:20-05:00","js_overrides":"https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/1355671/EvalKitJS.js","css_overrides":"https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/1825264/blocking%20wizard.css","mobile_js_overrides":"","mobile_css_overrides":"","parent_md5":null},"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/a3616af2e13184abcb9016882cec9424/variables-6ceabaf6137deaa1b310c07895491bdd.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-a370c48efb.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-6ceabaf6137deaa1b310c07895491bdd.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-1d2c45ff3b.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css"],"captcha_site_key":"6LftyLgZAAAAAC10tel8XGucbApMIY8-uFB_yVcN","current_user_id":"15923","current_user_global_id":"85450000000015923","current_user_usage_metrics_id":"ab6af63992ef4c456355431e3d9d9dc519b83aef1d7fcb62cddcd6136059e6a5","current_user_roles":["user","student"],"current_user_is_student":false,"current_user_types":[],"current_user_disabled_inbox":false,"current_user_visited_tabs":null,"discussions_reporting":false,"files_domain":"cluster54.canvas-user-content.com","group_information":null,"DOMAIN_ROOT_ACCOUNT_ID":"85450000000000001","DOMAIN_ROOT_ACCOUNT_UUID":"ucUPrfDBrhsar1oQigUpwm350xNE0yhqeLy6FI2A","HORIZON_DOMAIN":null,"k12":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"auto_show_cc":false,"disable_celebrations":false,"disable_keyboard_shortcuts":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://etbu.instructure.com","comment_library_suggestions_enabled":false,"SETTINGS":{"open_registration":false,"collapse_global_nav":true,"release_notes_badge_disabled":false,"can_add_pronouns":false,"show_sections_in_course_tray":true,"suppress_assignments":false},"RAILS_ENVIRONMENT":"Production","use_dyslexic_font":false,"SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-iad.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":null,"errors_sample_rate":"0.005","traces_sample_rate":"0.005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20250813.318"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-iad-prod.inscloudgate.net/submit","DOMAIN_ROOT_ACCOUNT_SFID":"001A000000JLCQyIAP","DIRECT_SHARE_ENABLED":false,"CAN_VIEW_CONTENT_SHARES":false,"FEATURES":{"account_level_blackout_dates":false,"render_both_to_do_lists":false,"commons_new_quizzes":true,"consolidated_media_player":true,"explicit_latex_typesetting":false,"media_links_use_attachment_id":true,"permanent_page_links":true,"enhanced_course_creation_account_fetching":false,"instui_for_import_page":true,"multiselect_gradebook_filters":true,"assignment_edit_placement_not_on_announcements":false,"instui_header":false,"rce_find_replace":true,"courses_popout_sisid":true,"dashboard_graphql_integration":false,"discussion_ai_survey_link":false,"discussion_checkpoints":true,"discussion_permalink":true,"speedgrader_studio_media_capture":true,"disallow_threaded_replies_fix_alert":true,"disallow_threaded_replies_manage":true,"horizon_course_setting":false,"new_quizzes_media_type":true,"validate_call_to_action":false,"new_quizzes_navigation_updates":true,"create_wiki_page_mastery_path_overrides":false,"create_external_apps_side_tray_overrides":false,"files_a11y_rewrite_toggle":true,"files_a11y_rewrite":true,"rce_a11y_resize":true,"hide_legacy_course_analytics":true,"youtube_overlay":false,"product_tours":false,"create_course_subaccount_picker":true,"file_verifiers_for_quiz_links":true,"lti_deep_linking_module_index_menu_modal":true,"lti_registrations_next":false,"lti_registrations_page":true,"lti_registrations_usage_data":true,"lti_registrations_usage_tab":false,"lti_asset_processor":false,"lti_asset_processor_discussions":false,"buttons_and_icons_root_account":false,"extended_submission_state":false,"scheduled_page_publication":true,"send_usage_metrics":true,"rce_transform_loaded_content":false,"disable_iframe_sandbox_file_show":false,"mobile_offline_mode":false,"react_discussions_post":true,"instui_nav":false,"lti_registrations_discover_page":true,"account_level_mastery_scales":false,"non_scoring_rubrics":true,"top_navigation_placement":false,"rubric_criterion_range":true,"rce_lite_enabled_speedgrader_comments":true,"lti_toggle_placements":true,"login_registration_ui_identity":false,"lti_apps_page_instructors":false,"course_paces_skip_selected_days":false,"course_pace_download_document":false,"course_pace_draft_state":false,"course_pace_time_selection":false,"course_pace_pacing_status_labels":false,"course_pace_pacing_with_mastery_paths":false,"course_pace_weighted_assignments":false,"modules_requirements_allow_percentage":false,"course_pace_allow_bulk_pace_assign":false,"lti_apps_page_ai_translation":true,"ams_service":false,"open_tools_in_new_tab":true,"horizon_learner_app":false,"horizon_learning_provider_app_on_contextless_routes":false,"youtube_migration":false,"account_survey_notifications":true,"embedded_release_notes":true,"assign_to_differentiation_tags":false,"canvas_k6_theme":null,"new_math_equation_handling":true},"PENDO_APP_ID":"1ca366f1-739e-4565-52d2-9e6f6a8d438f","current_user":{"id":"15923","anonymous_id":"cab","display_name":"Felicity DeVere","avatar_image_url":"https://intranet.etbu.edu/php/studentPhotos/867005008.jpg?_t=1755465304.5202508","html_url":"https://etbu.instructure.com/about/15923","pronouns":null,"avatar_is_fallback":false,"email":"Felicity_DeVere@etbu.edu"},"page_view_update_url":"/page_views/5ca7f0d8-11aa-498b-81df-da4f38a673ed?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNWNhN2YwZDgtMTFhYS00OThiLTgxZGYtZGE0ZjM4YTY3M2VkIiwidSI6ODU0NTAwMDAwMDAwMTU5MjMsImMiOiIyMDI1LTA4LTE4VDAxOjE1OjAzLjM1WiJ9.a4vUE1jc7dZtnkXvzUm1NS4SzuJnFstcSXeK54WqAqY","context_asset_string":null,"TIMEZONE":"America/Chicago","CONTEXT_TIMEZONE":null,"LOCALES":["en"],"BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"USE_CLASSIC_FONT":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"/dist/javascripts/translations/en-3f45f839b7.json","ACCOUNT_ID":"1","user_cache_key":"eaa13315b7289ba97de517d9c5b54ca715f99f702756180770783e648c5178c6a3809bdd10abb18c5b782ac0dee55d5208c16bf90b96418f72389efb89d4ee1e","horizon_course":false,"HORIZON_ACCOUNT":null,"notices":[],"active_context_tab":null};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl","new_styles_normal_contrast_dyslexic","new_styles_high_contrast_dyslexic"],{"10":["908ffbc673",0,"d5c9044c6e",2,0,0],"15":["c8540c43a4",0,"0a2196be1d",2,0,0],"19":["df5777ed9c"],"61":["d5c4afc14e","ebb835cdef","384361a056","2e0ba247d5",0,1],"67":["db2aeb63d1",0,"32c90f1518",2,0,0],"71":["b848cc547a","83ae671549","d1c7bac7c6","0888a4a9e7",0,1],"06":["ba28819778",0,"96b99aafe5",2,0,0],"f0":["b349f31f5e",0,0,0,0,0],"c8":["f0a308d011","8041fc9e65","74aaf5a5d7","9948c8b351",0,1],"1e":["834e660fc6","35fd7c2fa0","99d344b95a","3de47096dc",0,1],"b3":["336edad65b",0,"9838b0e53d",2,0,0],"0c":["4dae5befd2",0,"c18876be89",2,0,0],"da":["b5a7f9cd8f","6e65f5abf7","773390ae11","6481b459be",0,1],"1d":["2128789890",0,"e568085637",2,0,0],"08":["64bff5a97d"],"e2":["79d37f210d"],"9f":["d39b291ba6",0,0,0,0,0],"2b":["20b6964699","b11dc54da6","62fe3ea30b","6bb4a7ae9e",0,1],"2c":["8a926fc28b",0,0,0,0,0],"c2":["6f2721ae01"],"9c":["c31821c764",0,"1693aba1da",2,0,0],"c5":["b5d5bef953","09b4a0b487","27a133737e","2098769aea",0,1],"f2":["51574f9b13"]}]
+      REMOTES = {};
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/a3616af2e13184abcb9016882cec9424/variables-6ceabaf6137deaa1b310c07895491bdd.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Chicago-d9fecf4265.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/react-entry-db03463c7425b17e.js" crossorigin="anonymous" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-entry-23aa2b7cdab5d5df.js" crossorigin="anonymous" defer="defer"></script>
+
+  
+</head>
+
+<body class="full-width modal body--login-confirmation no-headers  primary-nav-transitions full-width responsive_student_grades_page">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app ">
+  
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+    <div id="main" class="ic-Layout-columns">
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+<div id="modal-box" class="ic-Login-confirmation">
+  <header class="ic-Login-confirmation__header">
+    <img class="ic-Login-confirmation__logo" alt="Canvas by Instructure" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/login/canvas-logo@2x-2212ce44ad.png" />
+  </header>
+  <div class="ic-Login-confirmation__content">
+    <h2 class="ic-Login-confirmation__headline">Multi-Factor Authentication</h2>
+      <div>
+        <p>Multi-Factor Authentication (MFA) enhances security by requiring a physical device and your Canvas login password.
+The device can be a code generator or a mobile phone that receives text messages.
+<strong>Using an authenticator app is strongly recommended for enhanced security.</strong></p>
+
+<p>Configure MFA by scanning the QR code with a Time-based One-Time Password (TOTP) app on iPhone or Android
+(e.g., Google Authenticator, Microsoft Authenticator, Authy). After setup, print backup codes from your profile
+page if your primary MFA device is unavailable.</p>
+        <div class="content-box">
+          <div class="grid-row otp-login__grid-row-divider">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <h3>Use Authenticator App</h3>
+              <div class="otp-qr-code">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADEAQAAAADo3bPGAAACPklEQVR4nO2X
+wbHkMAhEpU0AMiD/sJQBRMC+ls/+h51hT98zB5eoEgaapvnTL0/+WW/Pr+W/
+Wvbezq82r171HAz4se61coXtZRlRz8FApPr66tLf6/hzMJNRcyLanpVu/vFt
+75ZjZbY60iw/v+3F0hTn2E6iCUK6BwN+aoO0IF8RpMzjOfi+H5GMojh5SjHd
+g4n+efBVqzzdc2fVSP+kE4ipgRpYm5X7B7f9ZIkIotL96WDBbKRPrfKszM5z
+VrQaSeTzfT++KkRu7rSQW+FzTeCA59CiruvPyRAKJnBwWQe0kcCtOgUHH331
+q4W28SRvbiJuEjdSn5VGZeSj4Tmv1eYT9UkDzocWEs42bOB7pD5OWRgHN1mx
+RAlrpH8I5MA4gSOjUB/e9m5p7zjkzIiGKXQYrCN+9tEUTTHBgXqMzI3grUG0
+xnWZhoN0yYkJP4wD2ke8hk+73JYTuIbVttVlBHghfT+C5/vxLO8bU0MEwA7o
+zfBO2m5CaIjHRXZVIzoElul9x6owURqtI3MBCeptsA99Uwi4YzP9E35Am7CN
+I026ffP3fR7tQBzcWcdglc81Up9FPJUgoSSsSCPUM6LfDn0TABrOgerg7xld
+1dJRdU50M4XEOxYT9dH61sANzlYOJUJm+of1TSqe5fHRIHfiDeBAbCZZIMA1
+INgf3fajBemWWn1SrXPpYcaP0lUaQUdsUDN7MNvOvsUnJmkfqcYJfmN9Y7yh
+D5a0CNHM6Le7z3XjBqbWNrxmdNWv5R8sfwFDml9wjGGkfgAAAABJRU5ErkJg
+gg==" alt="Time-based one-time password (TOTP) QR code">
+              </div>
+              <p class="otp-login__text-align--xs-center">
+                <strong>Secret Key:</strong>
+                <br>
+                <span class="otp-login__secret-key">PMREOEZT2K64GWDAY7HTRHHEYWPLQXD5</span>
+              </p>
+            </div>
+              <div class="col-xs-12 col-sm-12 col-md-6">
+                <h3>Use SMS</h3>
+                <p>Only US mobile numbers are supported.</p>
+                <form id="new_phone_form" class="ic-Form-group" action="/login/otp/sms" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="uP7hgM6GSXFtM/TwUQY3GxBKUUJAzBoJd6akJSoK1q6BjpurmcUBCQYBtZgLSH8uejlndg2fY3kH1uUdelzjng==" autocomplete="off" />
+                  <div class="ic-Form-control">
+                    <label class="ic-Label" for="otp_login_phone_number">US Mobile Number:</label>
+                    <div class="controls">
+                      <input class="ic-Input" type="text" name="otp_login[phone_number]" id="otp_login_phone_number" />
+                    </div>
+                  </div>
+                  <div>
+                    <button type="submit" class="Button Button--primary">
+                      Send
+                    </button>
+                  </div>
+</form>              </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>Please enter the verification code shown by your token.</p>
+      </div>
+    <form id="login_form" class="ic-Form-group" action="/login/otp" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="IcoPK0W8japn223ar11jEBDx5uPLzEC8y8bdDjV+t2UYunUAEv/F0gzpLLL1EysleoLQ14afOcy7tpw2ZSiCVQ==" autocomplete="off" />
+      <div class="ic-Form-control">
+        <div class="ic-Input-group">
+          <label class="ic-Label" for="otp_login_verification_code">Verification Code:</label>
+          <input class="ic-Input" autocomplete="off" type="text" name="otp_login[verification_code]" id="otp_login_verification_code" />
+          <button type="submit" class="Button Button--primary">
+            Verify
+          </button>
+        </div>
+      </div>
+      <div>
+        <input name="otp_login[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1" name="otp_login[remember_me]" id="otp_login_remember_me" />
+        <label for="otp_login_remember_me">Remember this computer</label>
+      </div>
+</form>  </div>
+</div>
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">5ca7f0d8-11aa-498b-81df-da4f38a673ed</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+    <div class="NewUserTutorialTray__Container"></div>
+  <div id="react-router-portals"></div>
+  
+
+
+
+
+<script>
+//<![CDATA[
+(window.deferredBundles || (window.deferredBundles = [])).push('usage_metrics');
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+<script src="https://instructure-uploads.s3.amazonaws.com/account_85450000000000001/attachments/1355671/EvalKitJS.js" defer="defer"></script>
+
+
+</div> <!-- #application -->
+</body>
+</html>

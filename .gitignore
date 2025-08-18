@@ -15,8 +15,8 @@ __pycache__/
 *.pyd
 .Python
 
-# Downloaded content (may contain personal information)
-offline_site/
+# Downloaded content - commented out to include scraped content
+# offline_site/
 
 # IDE files
 .vscode/
