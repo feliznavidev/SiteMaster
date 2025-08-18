@@ -9,6 +9,7 @@ A Python tool that uses Selenium to authenticate with Canvas LMS and download co
 - Downloads rendered HTML content including dynamic elements
 - Handles file downloads with proper extensions
 - Saves all content locally for offline access
+- **Includes complete offline Canvas content for AI analysis**
 
 ## Setup
 
@@ -57,6 +58,18 @@ The script will:
 4. Scrape and download all accessible course content
 5. Save content to `offline_site/` directory
 
+## AI Playground Ready
+
+This repository includes complete offline Canvas content from multiple courses, making it perfect for:
+- **Course preparation and analysis**
+- **AI-powered study assistance** 
+- **Offline content review**
+- **Academic research and planning**
+
+The scraped content includes syllabi, assignments, course modules, and instructional materials from:
+- ENGL1301 - Rhetoric and Composition I (Dr. Troy White)
+- Additional courses with full content structure
+
 ## Security Notes
 
 - **Never commit your `.env` file** - it contains sensitive credentials
@@ -78,7 +91,13 @@ SiteMaster/
 ├── .env.example         # Environment template
 ├── .gitignore          # Git ignore patterns
 ├── README.md           # This file
-└── offline_site/       # Downloaded content (ignored by git)
+└── offline_site/       # Downloaded Canvas content (339+ files)
+    ├── courses/        # Course-specific content
+    │   ├── 21350/     # ENGL1301 - Rhetoric and Composition I
+    │   ├── 21716/     # Course materials and assignments
+    │   └── 22126/     # Additional course content
+    ├── files/         # Course documents (PDFs, DOCX, etc.)
+    └── scraped_*/     # Direct page captures for analysis
 ```
 
 ## License
