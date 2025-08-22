@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories - Tony's Birthday</title>
+    <link rel="stylesheet" href="styles.css?v=1755890999">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body class="gallery-page">
+    <!-- Hidden YouTube Player -->
+    <div id="youtube-player" style="display: none;"></div>
+    
+    <!-- Background Music (fallback) -->
+    <audio id="backgroundMusic" preload="auto" loop style="display: none;">
+        <source src="londons-song.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Music Control Button -->
+    <div class="gallery-music-control" id="galleryMusicControl" onclick="toggleGalleryMusic()">
+        <span id="galleryMusicIcon">🎵</span>
+    </div>
+
+    <header class="gallery-header">
+        <h1>Our Memories</h1>
+        <p>Click on any photo to see the full memory</p>
+    </header>
+
+    <div class="gallery-container">
+        <!-- Photo 1 -->
+        <div class="memory-card" onclick="openModal('modal1')">
+            <div class="photo-placeholder">
+                <img src="photos/photo1.jpg" alt="Memory 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your first photo here</p>
+                </div>
+            </div>
+            <div class="memory-preview">
+                <h3>Valentines Day</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="memory-card" onclick="openModal('modal2')">
+            <div class="photo-placeholder">
+                <img src="photos/photo2.jpg" alt="Memory 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your second photo here</p>
+                </div>
+            </div>
+            <div class="memory-preview">
+                <h3>Growing up</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="memory-card" onclick="openModal('modal3')">
+            <div class="photo-placeholder">
+                <img src="photos/photo3.jpg" alt="Memory 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your third photo here</p>
+                </div>
+            </div>
+            <div class="memory-preview">
+                <h3>Music</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="memory-card" onclick="openModal('modal4')">
+            <div class="photo-placeholder">
+                <img src="photos/photo4.jpg" alt="Memory 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your fourth photo here</p>
+                </div>
+            </div>
+            <div class="memory-preview">
+                <h3>Love</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="memory-card" onclick="openModal('modal5')">
+            <div class="photo-placeholder">
+                <img src="photos/photo5.jpg" alt="Memory 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your fifth photo here</p>
+                </div>
+            </div>
+            <div class="memory-preview">
+                <h3>Traveling</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="memory-card" onclick="openModal('modal6')">
+            <div class="photo-placeholder">
+                <img src="photos/photo6.jpg" alt="Memory 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-text">
+                    <span>📷</span>
+                    <p>Add your sixth photo here</p>
+                </div>
+            </div>
+                        <div class="memory-preview">
+                <h3>Looking forward</h3>
+                <p>Click to read the full story...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="photos/photo1.jpg" alt="Memory 1" class="modal-image">
+            <div class="modal-text">
+                <h2>Valentines Day</h2>
+                <p>Dad, I am so lucky to have you to teach me what valentines day means. I am so grateful that no guy has to teach me that all men are bad. My years growing have been defined slowly by you on who a man should be. I know you think you're not the best dad, but I think you beat yourself up too much. I will never consider you a bad father, because I can trust that you will always love me, be honest with me, and know me. This particular valentines weekend was important to me because although it was short, I spent it with you. This means so much to me.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="photos/photo2.jpg" alt="Memory 2" class="modal-image">
+            <div class="modal-text">
+                <h2>Growing up</h2>
+                <p>I constantly have you in my memories of growing up. I loved you as much as a 6 year old could in this photo. It felt like you were the only one who understood me. I remember feeling so safe whenever I was with you, and so sad whenever you were sad. My favorite days were when you took me to work with you, or when you would sleep in my room asking Joy and I to tell you good jokes. You would always fall asleep first and I would miss you even though you were right there. Your simple presence in my life impacted me so much, and still after all these years I want so desperately to make you happy. I don't think that will ever change.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="photos/photo3.jpg" alt="Memory 3" class="modal-image">
+            <div class="modal-text">
+                <h2>Music</h2>
+                <p>I realized about a year ago that not everyone has a live guitarist in their house when you were once playing, as you normally do, and my friends all seemed to be caught off guard by it, as if you were performing or something. At first, I didn't even know what they were looking at, because I'm so used to you playing all the time. Ever since that day, I remember that my life has always had your music playing in the background. From covers of John Legend and Daft Punk to your originals that you play all the time. I know I'm not the best at appreciating your music, and I wish I gave you the same support that you gave me when I attempted ukulele, but I need you to know that it is such a defining theme in my life. I want my kids to experience the exact same thing. I want to learn music with you and for you so that you can share that world you seem to enter.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="photos/photo4.jpg" alt="Memory 4" class="modal-image">
+            <div class="modal-text">
+                <h2>Love</h2>
+                <p>My life hasn't been that hard. Compared to most, I had a pretty good childhood. I've had friends growing up, opportunities, schools, etc. Not everyone has that. On the other hand, I've had troubles, I still do. I've healed and I am healing, and I owe so much of that to you. There are some things I don't know how I would've made it out of without you, and I will always need you and your guidance. I don't know how you seem to be so wise about life, I think it's because you've been through it all as well. I don't agree with you on everything, and I know we fight sometimes, (maybe more than sometimes) but I fight with you because I know we will make it to an agreement. Because I know you're worth fighting with. I know one of your goals is that you never want us to question if you really love us, and I hope you know I never have and never will. I love you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img src="photos/photo5.jpg" alt="Memory 5" class="modal-image">
+                        <div class="modal-text">
+                <h2>Traveling Together</h2>
+                <p>I'm so lucky to have been able to experience so many beautiful places with you. I haven't been everywhere, but seeing those caves in California, getting destroyed by a wave for bad timing, or snorkeling in Hawaii with you will always be in my core memories. I hope we get to see more beautiful things together.</p>
+                <p>I hope to go sailing with you someday or see one of those picture perfect purple trees. Thank you for being my travel companion through life and for showing me that the most beautiful destinations are made even more special when shared with someone you love.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <img src="photos/photo6.jpg" alt="Memory 6" class="modal-image">
+            <div class="modal-text">
+                <h2>Looking forward</h2>
+                <p>Dad, I love you so much. I am so grateful for you. I hope you know that I will always be the same girl I was when I was little. I hope all of your birthdays have been great, that this one has been even better, and that all of your future ones will be just as amazing. Even when I am married and moved away, I will always need you, your guidance, and love. I hope that this AI project makes you proud and I hope you get to have it forever. Happy birthday.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gallery-footer">
+        <button onclick="window.location.href='index.html'" class="back-button">Back to Beginning</button>
+    </footer>
+
+    <script>
+        // YouTube Player and Gallery Music Control
+        let player;
+        let backgroundMusic;
+        let originalVolume = 30;
+        let musicMuted = false;
+        const YOUTUBE_VIDEO_ID = 'z6AMCON4nWY'; // London's Song by Matt Hartke
+        
+        // YouTube API Ready
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-player', {
+                height: '1',
+                width: '1',
+                videoId: YOUTUBE_VIDEO_ID,
+                playerVars: {
+                    'autoplay': 1, // Auto-start on gallery page
+                    'controls': 0,
+                    'disablekb': 1,
+                    'enablejsapi': 1,
+                    'fs': 0,
+                    'iv_load_policy': 3,
+                    'modestbranding': 1,
+                    'playsinline': 1,
+                    'rel': 0,
+                    'showinfo': 0,
+                    'loop': 1,
+                    'playlist': YOUTUBE_VIDEO_ID
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange,
+                    'onError': onPlayerError
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            console.log('Gallery YouTube player ready');
+            player.setVolume(originalVolume); // Set to 30% volume
+            // Auto-play if music was playing on previous page
+            if (localStorage.getItem('musicWasPlaying') === 'true') {
+                player.playVideo();
+            }
+        }
+        
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                player.seekTo(0);
+                player.playVideo();
+            }
+        }
+        
+        function onPlayerError(event) {
+            console.error('Gallery YouTube player error:', event.data);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation when page loads
+            const cards = document.querySelectorAll('.memory-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        function toggleGalleryMusic() {
+            const musicControl = document.getElementById('galleryMusicControl');
+            const musicIcon = document.getElementById('galleryMusicIcon');
+            
+            if (!musicMuted) {
+                // Mute the music
+                player.pauseVideo();
+                musicMuted = true;
+                musicControl.classList.add('muted');
+                musicIcon.textContent = '🔇';
+                console.log('Gallery music muted');
+            } else {
+                // Unmute the music
+                player.playVideo();
+                musicMuted = false;
+                musicControl.classList.remove('muted');
+                musicIcon.textContent = '🎵';
+                console.log('Gallery music unmuted');
+            }
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Lower the music volume when modal opens (only if not muted)
+            if (player && player.setVolume && !musicMuted) {
+                player.setVolume(originalVolume * 0.2); // Lower to 20% of original volume (6% total)
+            }
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            // Restore original music volume when modal closes (only if not muted)
+            if (player && player.setVolume && !musicMuted) {
+                player.setVolume(originalVolume); // Back to 30%
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                
+                // Restore original music volume when modal closes (only if not muted)
+                if (player && player.setVolume && !musicMuted) {
+                    player.setVolume(originalVolume);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tony!</title>
+    <link rel="stylesheet" href="styles.css?v=1755890999">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="welcome-page">
+    <div class="welcome-container">
+        <div class="birthday-message">
+            <h1 class="birthday-title">🎉 Happy Birthday, Tony! 🎉</h1>
+            <p class="birthday-subtitle">Crafted using VS Code by Felicity Devere</p>
+            <div class="celebration-elements">
+                <span class="balloon">🎈</span>
+                <span class="cake">🎂</span>
+                <span class="gift">🎁</span>
+            </div>
+            <a href="gallery.html" class="begin-button" style="display: inline-block; text-decoration: none; color: white;">Begin the Journey</a>
+            <div class="developer-credit">
+                <p>Made with endless love for the most amazing dad ✨</p>
+            </div>
+        </div>
+        <div class="background-animation">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add sparkle effect on mouse movement
+            document.addEventListener('mousemove', function(e) {
+                if (Math.random() > 0.97) {
+                    createSparkle(e.clientX, e.clientY);
+                }
+            });
+            
+            function createSparkle(x, y) {
+                const sparkle = document.createElement('div');
+                sparkle.innerHTML = Math.random() > 0.5 ? '✨' : '💫';
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = x + 'px';
+                sparkle.style.top = y + 'px';
+                sparkle.style.fontSize = '12px';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.zIndex = '1000';
+                sparkle.style.animation = 'fadeSparkle 2s ease-out forwards';
+                sparkle.style.color = '#e879f9';
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 2000);
+            }
+            
+            // Add interactive elements
+            const balloons = document.querySelectorAll('.balloon, .cake, .gift');
+            balloons.forEach(balloon => {
+                balloon.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.5) rotate(360deg)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1) rotate(0deg)';
+                    }, 500);
+                    
+                    // Create sparkle burst on click
+                    for (let i = 0; i < 8; i++) {
+                        setTimeout(() => {
+                            const rect = balloon.getBoundingClientRect();
+                            const x = rect.left + rect.width/2 + (Math.random() - 0.5) * 100;
+                            const y = rect.top + rect.height/2 + (Math.random() - 0.5) * 100;
+                            createSparkle(x, y);
+                        }, i * 100);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
